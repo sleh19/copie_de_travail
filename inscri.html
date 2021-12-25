@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Inscription</title>
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Font-->
+    <link rel="stylesheet" type="text/css" href="css/nunito-font.css">
+    <!-- Main Style Css -->
+    <link rel="stylesheet" href="css/inscri.css" />
+</head>
+
+<body class="form-v9">
+    <div class="page-content" style="background-image: url('images/inscri.png')">
+        <div class="form-v9-content">
+            <form class="form-detail" action="inscri.php" method="post">
+                <h2>Inscription</h2>
+                <div class="form-row-total">
+                    <div class="form-row">
+                        <input type="text" name="nom" id="nom" class="input-text" placeholder="Nom" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="text" name="prenom" id="prenom" class="input-text" placeholder="Prénom" required>
+                    </div>
+
+                </div>
+
+                <div class="form-row-total">
+                    <div class="form-row">
+                        <input type="text" name="email" id="email" class="input-text" placeholder="Adresse mail" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+                    </div>
+                    <div class="form-row">
+                        <input type="text" name="cin" id="cin" class="input-text" placeholder="CIN" required pattern="[0-9]{8}">
+                    </div>
+                </div>
+                <div class="form-row-total">
+                    <div class="form-row">
+                        <input id="text" name="dateN" placeholder="aaaa-mm-jj" class="input-text">
+                    </div>
+                </div>
+
+                <div class="form-row-total">
+                    <div class="form-row">
+                        <input type="password" name="password" id="password" class="input-text" placeholder="Mot de passe" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="password" name="comfirm-password" id="comfirm-password" class="input-text" placeholder="Confirmer mot de passe" required>
+                    </div>
+                </div>
+                <div class="form-row-last">
+                    <input type="submit" name="submit" class="register" value="S'inscrire"> <br>
+                    <a href="login.html">
+                        <Font Color="white"> <i>vous avez déjà un compte ?</i></a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
